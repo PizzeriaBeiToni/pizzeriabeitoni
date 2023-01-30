@@ -1,0 +1,55 @@
+@import "styles/colors"
+@import "styles/dimensions"
+
+
+.context
+    width: 300px
+    max-width: 20vw
+    height: 100vh
+    padding: 50px
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: fixed
+    overflow: hidden
+    background: $light
+    color: $primary
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.23)
+    @media (max-width: $small)
+        width: 100vw
+        max-width: unset
+        height: 75px
+        padding: 5px 20px 5px 20px
+        flex-direction: row
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23)
+
+.header
+    font-size: larger
+    font-family: "Dancing Script", cursive
+    @media (max-width: $small)
+        font-size: medium
+
+.address
+    width: 100%
+    padding: 20px 0 20px 0
+    border: 1px solid rgba(0, 0, 0, 0.46)
+    border-left: none
+    border-right: none
+    text-align: center
+    a
+        cursor: pointer
+        color: $primary
+        text-decoration: none
+        font-size: 18px
+        font-family: "Aboreto", serif
+        line-height: 25px
+
+.links
+    padding: 20px 0 20px 0
+    gap: 10px
+    display: flex
+    flex-direction: column
+    a
+        font-size: 20px
+        cursor: pointer
+        text-align: center
