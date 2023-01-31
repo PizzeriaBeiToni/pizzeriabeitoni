@@ -19,7 +19,7 @@ const Sidebar: React.FC = () => {
 
                 {/* Header (Title) */}
                 <div className={styles.header}>
-                    <h1>Pizzeria bei Toni</h1>
+                    <img src="/img/logo_full.png" alt="" />
                 </div>
 
                 <motion.div
@@ -73,7 +73,7 @@ const Sidebar: React.FC = () => {
 
             {/* Header (Title) */}
             <div className={styles.header}>
-                <h1>Pizzeria bei Toni</h1>
+                <img src="/img/logo_full.png" alt="" />
             </div>
 
             {/* Address */}

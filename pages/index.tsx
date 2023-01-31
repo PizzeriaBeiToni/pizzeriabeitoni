@@ -2,6 +2,7 @@ import styles from "styles/Index.module.sass";
 import {NextPage} from "next";
 import Head from "next/head";
 import Sidebar from "@/components/Sidebar/Sidebar";
+import FrontSection from "@/components/FrontSection/FrontSection";
 
 
 const Index: NextPage = () => {
@@ -9,13 +10,14 @@ const Index: NextPage = () => {
         <div className={styles.context}>
 
             <Head>
-                <title>Pizzeria bei Toni</title>
+                <title>Pizzeria Bei Toni</title>
+                <link rel="icon" href="/img/favicon.png" />
             </Head>
 
             <Sidebar />
 
             <div className={styles.content}>
-
+                <FrontSection />
             </div>
 
         </div>

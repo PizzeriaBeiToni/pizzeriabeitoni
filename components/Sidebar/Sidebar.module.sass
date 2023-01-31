@@ -10,8 +10,7 @@
     display: flex
     flex-direction: column
     align-items: center
-    position: fixed
-    overflow: hidden
+    overflow-y: hidden
     background: $light
     color: $primary
     box-shadow: 10px 0 10px rgba(0, 0, 0, 0.23)
@@ -20,21 +19,27 @@
         max-width: none
         height: 75px
         padding: 0
+        position: fixed
         flex-direction: row
         justify-content: space-between
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23)
 
 .header
-    font-size: larger
-    font-family: "Dancing Script", cursive
     z-index: 200
+    img
+        width: 200px
+        object-fit: contain
     @media (max-width: $small)
         font-size: medium
         margin: 20px
+        img
+            width: unset
+            height: 60px
 
 .address
     width: 100%
     padding: 20px 0 20px 0
+    margin-top: 20px
     border: 1px solid rgba(0, 0, 0, 0.46)
     border-left: none
     border-right: none
