@@ -3,6 +3,7 @@ import {NextPage} from "next";
 import Head from "next/head";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import FrontSection from "@/components/FrontSection/FrontSection";
+import MenuSection from "@/components/MenuSection/MenuSection";
 
 
 const Index: NextPage = () => {
@@ -18,6 +19,7 @@ const Index: NextPage = () => {
 
             <div className={styles.content}>
                 <FrontSection />
+                <MenuSection />
             </div>
 
         </div>
