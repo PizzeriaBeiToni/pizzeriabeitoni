@@ -1,5 +1,7 @@
 @import "styles/colors"
-@import "styles/dimensions"
+
+
+$max-folding-width: 1150px
 
 
 .context
@@ -11,10 +13,11 @@
     flex-direction: column
     align-items: center
     overflow-y: hidden
+    overflow-x: hidden
     background: $light
     color: $primary
     box-shadow: 10px 0 10px rgba(0, 0, 0, 0.23)
-    @media (max-width: $small)
+    @media (max-width: $max-folding-width)
         width: 100vw
         max-width: none
         height: 75px
@@ -29,7 +32,7 @@
     img
         width: 200px
         object-fit: contain
-    @media (max-width: $small)
+    @media (max-width: $max-folding-width)
         font-size: medium
         margin: 20px
         img
@@ -48,7 +51,7 @@
         cursor: pointer
         color: $primary
         text-decoration: none
-        font-size: 18px
+        font-size: 15px
         font-family: "Aboreto", serif
         line-height: 25px
 

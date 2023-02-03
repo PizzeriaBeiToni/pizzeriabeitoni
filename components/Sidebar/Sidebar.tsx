@@ -6,7 +6,8 @@ import {GiKnifeFork as MenuIcon} from "react-icons/gi";
 
 
 const Sidebar: React.FC = () => {
-    const isSmallScreen = useMaxWidth("small");
+    // 1150px extracted from stylesheet: $max-folding-width
+    const isSmallScreen = useMaxWidth(1150);
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
     function toggleMenuOpen() {
