@@ -24,7 +24,7 @@ const MapsSection: React.FC = () => {
                         Genießen Sie Italienische Spezialitäten, die in unserer Kusine
                         angeboten werden.
                     </p>
-                    <a className={styles.buttonLink} target="_blank" href="https://goo.gl/maps/WtdewpnyvgqJamHG6">
+                    <a className={styles.buttonLink} target="_blank" href="https://goo.gl/maps/WtdewpnyvgqJamHG6" rel="noreferrer">
                         Maps <MapIcon />
                     </a>
                 </div>

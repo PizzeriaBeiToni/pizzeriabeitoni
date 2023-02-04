@@ -29,7 +29,7 @@ const MenuSection: React.FC = () => {
                         Unsere leckeren Gerichte repräsentieren die mediterranische,
                         Italienische Kultur.
                     </p>
-                    <a className={styles.buttonLink} href="/menu.pdf" target="_blank">
+                    <a className={styles.buttonLink} href="/menu.pdf" target="_blank" rel="noreferrer">
                         Öffnen <OpenIcon />
                     </a>
                 </div>

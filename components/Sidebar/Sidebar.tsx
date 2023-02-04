@@ -8,7 +8,7 @@ import {FaFacebookSquare as FacebookIcon} from "react-icons/fa";
 
 const AddressSection: React.FC = () => (
     <div className={styles.address}>
-        <a target="_blank" href="https://goo.gl/maps/WtdewpnyvgqJamHG6">
+        <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/WtdewpnyvgqJamHG6">
             Mathmeckestraße 4 <br />
             59889 Eslohe
         </a>
@@ -30,6 +30,7 @@ const LinksSection: React.FC = () => (
         <a
             className={styles.facebookLink}
             target="_blank"
+            rel="noreferrer"
             href="https://www.facebook.com/people/Restaurant-Pizzeria-Bei-Toni/100062113045315/"
         >
             <FacebookIcon />
