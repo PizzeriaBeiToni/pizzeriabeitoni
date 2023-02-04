@@ -3,6 +3,39 @@ import React, {useState} from "react";
 import {motion} from "framer-motion";
 import {useMaxWidth} from "@/dimensions";
 import {GiKnifeFork as MenuIcon} from "react-icons/gi";
+import {FaFacebookSquare as FacebookIcon} from "react-icons/fa";
+
+
+const AddressSection: React.FC = () => (
+    <div className={styles.address}>
+        <a target="_blank" href="https://goo.gl/maps/WtdewpnyvgqJamHG6">
+            Mathmeckestraße 4 <br />
+            59889 Eslohe
+        </a>
+    </div>
+);
+
+
+const LinksSection: React.FC = () => (
+    <div className={styles.links}>
+        <a>
+            Fotos
+        </a>
+        <a>
+            Menü
+        </a>
+        <a>
+            Kontakt
+        </a>
+        <a
+            className={styles.facebookLink}
+            target="_blank"
+            href="https://www.facebook.com/people/Restaurant-Pizzeria-Bei-Toni/100062113045315/"
+        >
+            <FacebookIcon />
+        </a>
+    </div>
+);
 
 
 const Sidebar: React.FC = () => {
@@ -39,25 +72,11 @@ const Sidebar: React.FC = () => {
                     transition={{ type: 'ease', duration: 0.5 }}
                 >
                     {/* Address */}
-                    <div className={styles.address}>
-                        <a href="https://goo.gl/maps/WtdewpnyvgqJamHG6">
-                            Mathmeckestraße 4 <br />
-                            59889 Eslohe
-                        </a>
-                    </div>
+                    <AddressSection />
 
                     {/* Links */}
-                    <div className={styles.links}>
-                        <a>
-                            Fotos
-                        </a>
-                        <a>
-                            Menü
-                        </a>
-                        <a>
-                            Kontakt
-                        </a>
-                    </div>
+                    <LinksSection />
+
                 </motion.div>
 
             </motion.div>
@@ -78,25 +97,10 @@ const Sidebar: React.FC = () => {
             </div>
 
             {/* Address */}
-            <div className={styles.address}>
-                <a href="https://goo.gl/maps/WtdewpnyvgqJamHG6">
-                    Mathmeckestraße 4 <br />
-                    59889 Eslohe
-                </a>
-            </div>
+            <AddressSection />
 
             {/* Links */}
-            <div className={styles.links}>
-                <a>
-                    Fotos
-                </a>
-                <a>
-                    Menü
-                </a>
-                <a>
-                    Kontakt
-                </a>
-            </div>
+            <LinksSection />
 
         </motion.div>
     );
