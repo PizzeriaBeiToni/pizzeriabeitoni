@@ -5,6 +5,7 @@ import Sidebar from "@/components/Sidebar/Sidebar";
 import FrontSection from "@/components/FrontSection/FrontSection";
 import MenuSection from "@/components/MenuSection/MenuSection";
 import MapsSection from "@/components/MapsSection/MapsSection";
+import ContactSection from "@/components/ContactSection/ContactSection";
 
 
 const Index: NextPage = () => {
@@ -22,6 +23,7 @@ const Index: NextPage = () => {
                 <FrontSection />
                 <MenuSection />
                 <MapsSection />
+                <ContactSection />
             </div>
 
         </div>
