@@ -20,7 +20,7 @@ const Index: NextPage = () => {
 
             <Sidebar />
 
-            <div className={styles.content}>
+            <div id="content" className={styles.content}>
                 <FrontSection />
                 <MenuSection />
                 <MapsSection />

@@ -4,6 +4,7 @@ import {motion} from "framer-motion";
 import {useMaxWidth} from "@/dimensions";
 import {GiKnifeFork as MenuIcon} from "react-icons/gi";
 import {FaFacebookSquare as FacebookIcon} from "react-icons/fa";
+import {Link} from "react-scroll";
 
 
 const AddressSection: React.FC = () => (
@@ -16,27 +17,31 @@ const AddressSection: React.FC = () => (
 );
 
 
-const LinksSection: React.FC = () => (
-    <div className={styles.links}>
-        <a>
-            Fotos
-        </a>
-        <a>
-            Menü
-        </a>
-        <a>
-            Kontakt
-        </a>
-        <a
-            className={styles.facebookLink}
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.facebook.com/people/Restaurant-Pizzeria-Bei-Toni/100062113045315/"
-        >
-            <FacebookIcon />
-        </a>
-    </div>
-);
+const LinksSection: React.FC<{ onLinkClick: () => void }> = ({ onLinkClick }) => {
+    const ScrollLink: React.FC<{ title: string, to: string }> = ({ title, to }) => (
+        <Link containerId="content" to={to} smooth spy duration={1500} onClick={onLinkClick}>
+            { title }
+        </Link>
+    );
+
+    return (
+        <div className={styles.links}>
+            <ScrollLink title="Fotos" to="photos" />
+            <ScrollLink title="Menü" to="menu" />
+            <ScrollLink title="Standort" to="maps" />
+            <ScrollLink title="Öffnungszeiten" to="hours" />
+            <ScrollLink title="Kontakt" to="contact" />
+            <a
+                className={styles.facebookLink}
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.facebook.com/people/Restaurant-Pizzeria-Bei-Toni/100062113045315/"
+            >
+                <FacebookIcon />
+            </a>
+        </div>
+    );
+}
 
 
 const Sidebar: React.FC = () => {
@@ -76,7 +81,7 @@ const Sidebar: React.FC = () => {
                     <AddressSection />
 
                     {/* Links */}
-                    <LinksSection />
+                    <LinksSection onLinkClick={toggleMenuOpen} />
 
                 </motion.div>
 
@@ -101,7 +106,7 @@ const Sidebar: React.FC = () => {
             <AddressSection />
 
             {/* Links */}
-            <LinksSection />
+            <LinksSection onLinkClick={toggleMenuOpen} />
 
         </motion.div>
     );
