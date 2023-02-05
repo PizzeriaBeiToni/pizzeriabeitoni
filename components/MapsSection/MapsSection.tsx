@@ -21,7 +21,7 @@ const MapsSection: React.FC = () => {
                         Besuchen Sie Uns
                     </span>
                     <p className={styles.sectionText}>
-                        Genießen Sie Italienische Spezialitäten, die in unserer Kusine
+                        Genießen Sie Italienische Spezialitäten, die in unserer Küche
                         angeboten werden.
                     </p>
                     <a className={styles.buttonLink} target="_blank" href="https://goo.gl/maps/WtdewpnyvgqJamHG6" rel="noreferrer">

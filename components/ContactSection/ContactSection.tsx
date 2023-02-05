@@ -1,5 +1,7 @@
 import styles from "./ContactSection.module.sass";
 import React from "react";
+import {BsTelephoneFill as PhoneIcon} from "react-icons/bs";
+import {FaMapMarkerAlt as MapIcon} from "react-icons/fa";
 
 
 const ContactSection: React.FC = () => {
@@ -13,11 +15,16 @@ const ContactSection: React.FC = () => {
                 </span>
 
                 <p className={styles.paragraph}>
-                    Setzen Sie sich gerne mit uns in Verbindung.
+                    Setzen Sie sich gerne mit uns in Verbindung oder besuchen Sie unser
+                    Restaurant.
                 </p>
 
                 <span className={styles.contactItem}>
-                    Telefon: 02973 451
+                    <PhoneIcon /> 02973 451
+                </span>
+
+                <span className={styles.contactItem}>
+                    <MapIcon /> Mathmeckestraße 4, 59889 Eslohe
                 </span>
 
             </div>
