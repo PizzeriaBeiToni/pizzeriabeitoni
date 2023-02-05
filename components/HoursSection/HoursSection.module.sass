@@ -1,0 +1,48 @@
+@import "styles/colors"
+@import "styles/dimensions"
+
+
+.context
+    width: 100%
+    height: fit-content
+    padding: 20px
+    margin: 100px 0 50px 0
+    display: flex
+    flex-direction: column
+    align-items: center
+    @media (max-width: $small)
+        margin-top: 50px
+
+.header
+    font-size: 2rem
+    font-family: "Cormorant Garamond", serif
+    color: $primary
+    font-style: italic
+    margin-bottom: 40px
+
+.box
+    width: 500px
+    max-width: 100%
+    padding: 30px
+    border: 1px solid rgba(0, 0, 0, 0.23)
+    border-radius: 14px
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+.hourItem
+    display: flex
+    *
+        font-family: "Cormorant Garamond", serif
+        font-size: 1.3rem
+    .hourItemDay
+        width: 50%
+        text-align: left
+        color: $primary
+    .hourItemHours
+        width: 50%
+        text-align: right
+        color: black
+        display: flex
+        flex-direction: column
+        gap: 2px
