@@ -39,7 +39,7 @@ const HoursSection: React.FC = () => {
                         day="Montag"
                         hours={[
                             "12:00 - 14:30",
-                            "15:00 - 22:00"
+                            "17:00 - 22:00"
                         ]}
                     />
 
