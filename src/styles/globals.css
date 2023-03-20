@@ -1,0 +1,14 @@
+/* Google Fonts: "Dancing Script" */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* Google Fonts: "Aboreto" */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+/* Google Fonts: "Merriweather" */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+/* Google Fonts: "Cormorant Garamond" */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+
+*::selection, *::-moz-selection {
+    background: rgb(112, 33, 33);
+    color: white;
+}
