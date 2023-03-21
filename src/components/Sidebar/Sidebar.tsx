@@ -12,6 +12,7 @@ import {
     Logo,
     LogoSmall, MenuButton, MenuContent
 } from "./Sidebar.styles";
+import {contextMotion, contextSmallMotion, menuButtonMotion, menuContentMotion} from "./Sidebar.motion";
 import {useMediaQuery} from "@mui/material";
 
 
@@ -32,24 +33,16 @@ const Sidebar: React.FC = () => {
 
     if (isSmallScreen) {
         return (
-            <ContextSmall>
+            <ContextSmall {...contextSmallMotion}>
 
                 {/* Header (Title) */}
                 <LogoSmall src="/img/logo_full.png" alt=""/>
 
-                <MenuButton
-                    initial={undefined}
-                    animate={{ rotate: isMenuOpen? -180 : 0 }}
-                    onClick={toggleMenuOpen}
-                >
+                <MenuButton onClick={toggleMenuOpen} {...menuButtonMotion(isMenuOpen)}>
                     <MenuIcon />
                 </MenuButton>
 
-                <MenuContent
-                    initial={undefined}
-                    animate={{ translateY: !isMenuOpen? '-100vh' : 0, opacity: !isMenuOpen? 0 : 1 }}
-                    transition={{ type: 'ease', duration: 0.5 }}
-                >
+                <MenuContent {...menuContentMotion(isMenuOpen)}>
                     {/* Address */}
                     <AddressSection>
                         <AddressLink target="_blank" rel="noreferrer" href="https://goo.gl/maps/WtdewpnyvgqJamHG6">
@@ -81,11 +74,7 @@ const Sidebar: React.FC = () => {
     }
 
     return (
-        <Context
-            initial={{ translateX: -300, opacity: 0 }}
-            animate={{ translateX: 0, opacity: 1 }}
-            transition={{ type: 'ease', duration: 0.7 }}
-        >
+        <Context {...contextMotion}>
 
             {/* Header (Title) */}
             <Logo src="/img/logo_full.png" alt="" />
