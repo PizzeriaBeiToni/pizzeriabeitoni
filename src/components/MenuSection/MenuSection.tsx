@@ -27,7 +27,7 @@ const MenuSection: React.FC = () => {
                         Italienische Kultur.
                     </SectionParagraph>
 
-                    <ButtonLink href="/src/public/menu.pdf" target="_blank" rel="noreferrer">
+                    <ButtonLink href="/menu.pdf" target="_blank" rel="noreferrer">
                         Öffnen <OpenIcon />
                     </ButtonLink>
 
