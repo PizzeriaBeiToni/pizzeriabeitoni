@@ -7,9 +7,23 @@ import MapsSection from "@/src/components/MapsSection/MapsSection";
 import ContactSection from "@/src/components/ContactSection/ContactSection";
 import HoursSection from "@/src/components/HoursSection/HoursSection";
 import {Context, Content} from "@/src/styles/Index.styles";
+import {useState} from "react";
+import BootScreen from "@/src/components/BootScreen/BootScreen";
 
 
 const Index: NextPage = () => {
+    const [hasBooted, setHasBooted] = useState<boolean>(false);
+
+    function completeBoot() {
+        setHasBooted(true);
+    }
+
+    if (!hasBooted) {
+        return (
+            <BootScreen onAnimationComplete={completeBoot} />
+        );
+    }
+
     return (
         <Context>
 
