@@ -1,27 +1,34 @@
-import {MotionProps} from "framer-motion";
+import {MotionProps, Variants} from "framer-motion";
 
 
-export const imageMotion: MotionProps = {
-    initial: {
-        opacity: 0
+export const imageVariants: Variants = {
+    before: {
+        opacity: 0,
     },
-    animate: {
+    after: {
         opacity: 1
-    },
-    transition: {
-        duration: 0.5
     }
 }
 
-export const columnMotion: MotionProps = {
-    initial: {
-        opacity: 0
-    },
-    animate: {
-        opacity: 1
-    },
+const fadeDuration = 0.3;
+const delay = 0.75;
+
+export const leftGridMotion: MotionProps = {
+    initial: "before",
+    animate: "after",
     transition: {
-        duration: 0.5,
-        delay: 0.8
+        duration: fadeDuration,
+        staggerChildren: fadeDuration * 2,
+        delayChildren: delay
+    }
+}
+
+export const rightGridMotion: MotionProps = {
+    initial: "before",
+    animate: "after",
+    transition: {
+        duration: fadeDuration,
+        staggerChildren: fadeDuration * 2,
+        delayChildren: delay + fadeDuration
     }
 }
