@@ -1,85 +1,102 @@
 import React from "react";
-import {Box, Context, Header, HourItemContext, HourItemDay, HourItemHours} from "./HoursSection.styles";
-
-
-interface HourItemProps {
-    day: string;
-    hours: string[]
-}
-
-const HourItem: React.FC<HourItemProps> = ({ day, hours }) => {
-    return (
-        <HourItemContext>
-            <HourItemDay>
-                { day }
-            </HourItemDay>
-            <HourItemHours>
-                { hours.map(hour => <span key={day + hour}>{ hour }</span>) }
-            </HourItemHours>
-        </HourItemContext>
-    );
-}
+import {
+    Context,
+    TableCellDay, TableCellHeader,
+    TableCellHours
+} from "./HoursSection.styles";
+import {Paper, Table, TableBody, TableContainer, TableHead, TableRow} from "@mui/material";
 
 
 const HoursSection: React.FC = () => {
     return (
         <Context id="hours">
 
-                <Header>
-                    Unsere Öffnungszeiten
-                </Header>
+            <TableContainer sx={{ maxWidth: "md" }} component={Paper}>
+                <Table>
+                    <TableHead>
 
-                <Box>
-                    <HourItem
-                        day="Montag"
-                        hours={[
-                            "12:00 - 14:30",
-                            "17:00 - 22:00"
-                        ]}
-                    />
-                    <HourItem
-                        day="Dienstag"
-                        hours={[
-                            "12:00 - 14:30",
-                            "17:00 - 22:00"
-                        ]}
-                    />
-                    <HourItem
-                        day="Mittwoch"
-                        hours={[
-                            "RUHETAG",
-                            "-"
-                        ]}
-                    />
-                    <HourItem
-                        day="Donnerstag"
-                        hours={[
-                            "12:00 - 14:30",
-                            "17:00 - 22:00"
-                        ]}
-                    />
-                    <HourItem
-                        day="Freitag"
-                        hours={[
-                            "12:00 - 14:30",
-                            "17:00 - 22:00"
-                        ]}
-                    />
-                    <HourItem
-                        day="Samstag"
-                        hours={[
-                            "12:00 - 14:30",
-                            "17:00 - 22:00"
-                        ]}
-                    />
-                    <HourItem
-                        day="Sonntag"
-                        hours={[
-                            "12:00 - 14:30",
-                            "17:00 - 22:00"
-                        ]}
-                    />
-            </Box>
+                        <TableRow>
+                            <TableCellHeader colSpan={2}>
+                                Unsere Öffnungszeiten
+                            </TableCellHeader>
+                        </TableRow>
+
+                    </TableHead>
+                    <TableBody>
+
+                        <TableRow>
+                            <TableCellDay>
+                                Montag
+                            </TableCellDay>
+                            <TableCellHours>
+                                12:00 - 14:30 <br />
+                                17:00 - 22:00
+                            </TableCellHours>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCellDay>
+                                Dienstag
+                            </TableCellDay>
+                            <TableCellHours>
+                                12:00 - 14:30 <br />
+                                17:00 - 22:00
+                            </TableCellHours>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCellDay>
+                                Mittwoch
+                            </TableCellDay>
+                            <TableCellHours>
+                                RUHETAG <br />
+                                RUHETAG
+                            </TableCellHours>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCellDay>
+                                Donnerstag
+                            </TableCellDay>
+                            <TableCellHours>
+                                12:00 - 14:30 <br />
+                                17:00 - 22:00
+                            </TableCellHours>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCellDay>
+                                Freitag
+                            </TableCellDay>
+                            <TableCellHours>
+                                12:00 - 14:30 <br />
+                                17:00 - 22:00
+                            </TableCellHours>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCellDay>
+                                Samstag
+                            </TableCellDay>
+                            <TableCellHours>
+                                12:00 - 14:30 <br />
+                                17:00 - 22:00
+                            </TableCellHours>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCellDay>
+                                Sonntag
+                            </TableCellDay>
+                            <TableCellHours>
+                                12:00 - 14:30 <br />
+                                17:00 - 22:00
+                            </TableCellHours>
+                        </TableRow>
+
+                    </TableBody>
+                </Table>
+            </TableContainer>
 
         </Context>
     );

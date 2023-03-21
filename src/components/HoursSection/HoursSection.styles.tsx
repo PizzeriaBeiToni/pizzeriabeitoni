@@ -1,4 +1,4 @@
-import {styled} from "@mui/material";
+import {styled, TableCell} from "@mui/material";
 
 
 export const Context = styled('div')`
@@ -14,46 +14,22 @@ export const Context = styled('div')`
   }
 `;
 
-export const Header = styled('span')`
-  font-size: 2rem;
+export const TableCellHeader = styled(TableCell)`
+  color: #ffffff;
+  background: ${props => props.theme.palette.primary.main};
   font-family: "Cormorant Garamond", serif;
+  font-size: 1.6rem;
+  text-align: center;
+`;
+
+export const TableCellDay = styled(TableCell)`
   color: ${props => props.theme.palette.primary.main};
-  font-style: italic;
-  margin-bottom: 40px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
 `;
 
-export const Box = styled('div')`
-  width: 500px;
-  max-width: 100%;
-  padding: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.23);
-  border-radius: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-`;
-
-/////////////////////////////////////////////////////////////////////////////////////
-
-export const HourItemContext = styled('div')`
-  display: flex;
-  * {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 1.3rem;
-  }
-`;
-
-export const HourItemDay = styled('div')`
-  width: 50%;
-  text-align: left;
-  color: ${props => props.theme.palette.primary.main};
-`;
-
-export const HourItemHours = styled('div')`
-  width: 50%;
+export const TableCellHours = styled(TableCell)`
   text-align: right;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
 `;
