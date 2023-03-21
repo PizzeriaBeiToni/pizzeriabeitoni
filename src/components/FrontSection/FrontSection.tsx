@@ -1,56 +1,29 @@
-import React, {useEffect, useState} from "react";
-import {Column, Context, Image} from "./FrontSection.styles";
-import {columnMotion, imageMotion} from "./FrontSection.motion";
-
-
-function useImages(): [JSX.Element[], JSX.Element[]] {
-    const [col1, setCol1] = useState<JSX.Element[]>([]);
-    const [col2, setCol2] = useState<JSX.Element[]>([]);
-
-    // load all images.
-    // NOTE: This is bad practice
-    // TODO Make this maintainable
-    useEffect(() => {
-        let c1 = [];
-        let c2 = []
-        for (let i=1; i<=3; i++) {
-            c1.push(
-                <Image
-                    key={'c1_r' + i}
-                    src={`/img/c1_r${i}.jpg`}
-                    alt="" {...imageMotion}
-                />
-            );
-            c2.push(
-                <Image
-                    key={'c2_r' + i}
-                    src={`/img/c2_r${i}.jpg`}
-                    alt="" {...imageMotion}
-                />
-            );
-        }
-        c2.push(<Image src={'/img/c2_r4.jpg'} />);
-        setCol1(c1);
-        setCol2(c2);
-    }, []);
-
-    return [col1, col2];
-}
+import React from "react";
+import {Context, Image} from "./FrontSection.styles";
+import {Grid} from "@mui/material";
 
 
 const FrontSection: React.FC = () => {
-    const [col1, col2] = useImages();
-
     return (
         <Context id="photos">
 
-            <Column {...columnMotion}>
-                { col1 }
-            </Column>
+            <Grid container columnSpacing={1}>
+                <Grid item xs={12} sm={6}>
 
-            <Column {...columnMotion}>
-                { col2 }
-            </Column>
+                    <Image src="/img/c1_r1.jpg" alt="" />
+                    <Image src="/img/c1_r2.jpg" alt="" />
+                    <Image src="/img/c1_r3.jpg" alt="" />
+
+                </Grid>
+                <Grid item xs={12} sm={6}>
+
+                    <Image src="/img/c2_r1.jpg" alt="" />
+                    <Image src="/img/c2_r2.jpg" alt="" />
+                    <Image src="/img/c2_r3.jpg" alt="" />
+                    <Image src="/img/c2_r4.jpg" alt="" />
+
+                </Grid>
+            </Grid>
 
         </Context>
     );
