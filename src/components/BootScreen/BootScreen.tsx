@@ -12,7 +12,7 @@ const BootScreen: React.FC<BootScreenProps> = ({ onAnimationComplete }) => {
     return (
         <Context {...contextMotion}>
             <Logo
-                src="/img/logo_full.png"
+                src="/img/logo.png"
                 alt="logo"
                 {...logoMotion}
                 onAnimationComplete={onAnimationComplete}

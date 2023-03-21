@@ -36,7 +36,7 @@ const Sidebar: React.FC = () => {
             <ContextSmall {...contextSmallMotion}>
 
                 {/* Header (Title) */}
-                <LogoSmall src="/img/logo_full.png" alt=""/>
+                <LogoSmall src="/img/logo.png" alt=""/>
 
                 <MenuButton onClick={toggleMenuOpen} {...menuButtonMotion(isMenuOpen)}>
                     <MenuIcon />
@@ -77,7 +77,7 @@ const Sidebar: React.FC = () => {
         <Context {...contextMotion}>
 
             {/* Header (Title) */}
-            <Logo src="/img/logo_full.png" alt="" />
+            <Logo src="/img/logo.png" alt="" />
 
             {/* Address */}
             <AddressSection>
