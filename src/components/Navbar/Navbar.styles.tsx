@@ -19,6 +19,8 @@ export const Logo = styled('img')`
   padding: 10px;
   object-fit: contain;
   z-index: 200;
+  pointer-events: none;
+  user-select: none;
 `;
 
 export const MenuButton = styled(motion.div)`

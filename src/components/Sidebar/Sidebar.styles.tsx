@@ -51,4 +51,6 @@ export const Logo = styled('img')`
   width: 200px;
   object-fit: contain;
   z-index: 200;
+  pointer-events: none;
+  user-select: none;
 `;

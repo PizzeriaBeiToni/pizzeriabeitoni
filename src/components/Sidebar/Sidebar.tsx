@@ -37,10 +37,10 @@ export const NavLinksSection: React.FC<{ onLinkClick?: () => void }> = ({ onLink
             Menü
         </NavLink>
         <NavLink targetId="maps" onClick={onLinkClick}>
-            Maps
+            Standort
         </NavLink>
         <NavLink targetId="hours" onClick={onLinkClick}>
-            Hours
+            Öffnungszeiten
         </NavLink>
         <NavLink targetId="contact" onClick={onLinkClick}>
             Kontakt
