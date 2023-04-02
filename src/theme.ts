@@ -11,5 +11,8 @@ export const theme = createTheme({
             default: '#FFFBF5',
             paper: '#fff9f0'
         }
+    },
+    typography: {
+        fontFamily: `"Cormorant Garamond", serif`
     }
 });
