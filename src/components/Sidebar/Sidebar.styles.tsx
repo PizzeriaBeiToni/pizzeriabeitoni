@@ -6,7 +6,7 @@ export const AddressSection = styled('div')`
   width: 100%;
   padding: 20px 0 20px 0;
   margin-top: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.46);
+  border: 1px solid rgba(0, 0, 0, 0.28);
   border-left: none;
   border-right: none;
   text-align: center;
@@ -27,18 +27,7 @@ export const LinksSection = styled('div')`
   gap: 10px;
   display: flex;
   flex-direction: column;
-  a {
-    color: ${props => props.theme.palette.primary.main};
-    font-family: "Merriweather", serif;
-    font-size: 18px;
-    cursor: pointer;
-    text-align: center;
-  }
-`;
-
-export const FacebookLink = styled('a')`
-  margin-top: 20px;
-  font-size: 25px !important;
+  text-align: center;
 `;
 
 /////////////////////////////////////////////////////////////////////////////
@@ -62,39 +51,4 @@ export const Logo = styled('img')`
   width: 200px;
   object-fit: contain;
   z-index: 200;
-`;
-
-export const ContextSmall = styled(Context)`
-  width: 100vw;
-  max-width: none;
-  height: 75px;
-  padding: 0;
-  position: fixed;
-  flex-direction: row;
-  justify-content: space-between;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
-`;
-
-export const LogoSmall = styled(Logo)`
-  width: unset;
-  height: 60px;
-`;
-
-export const MenuButton = styled(motion.div)`
-  justify-self: right;
-  overflow: hidden;
-  margin: 20px;
-  font-size: 25px;
-  z-index: 200;
-`;
-
-export const MenuContent = styled(motion.div)`
-  width: 100vw;
-  height: fit-content;
-  padding: 90px 0 50px 0;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  background: #fff4f4;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.14);
 `;
