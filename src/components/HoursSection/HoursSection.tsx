@@ -12,7 +12,7 @@ const HoursSection: React.FC = () => {
         <Context id="hours">
 
             <TableContainer sx={{ maxWidth: "md" }} component={Paper}>
-                <Table>
+                <Table sx={{ 'tr:last-child > td': { border: 'none' } }}>
                     <TableHead>
 
                         <TableRow>
