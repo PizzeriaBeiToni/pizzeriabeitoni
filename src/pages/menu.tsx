@@ -2,11 +2,16 @@ import {NextPage} from "next";
 import {Context, MenuDescription, MenuHeader, MenuImage, MenuLink} from "@/src/styles/menu.styles";
 import {HiOutlineBookOpen as OpenIcon} from "react-icons/hi";
 import React from "react";
+import Head from "next/head";
 
 
 const Menu: NextPage = () => {
     return (
         <Context>
+
+            <Head>
+                <title>Pizzeria Bei Toni | Menü</title>
+            </Head>
 
             <MenuImage
                 src="https://img.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg?w=2000" alt=""

@@ -7,7 +7,6 @@ import {
     LinksSection,
     Logo
 } from "./Sidebar.styles";
-import {contextMotion} from "./Sidebar.motion";
 import {IconButton} from "@mui/material";
 import NavLink from "@/src/components/NavLink/NavLink";
 
@@ -58,7 +57,7 @@ export const NavAddressSection: React.FC = () => (
 
 const Sidebar: React.FC = () => {
     return (
-        <Context {...contextMotion}>
+        <Context>
 
             {/* Logo */}
             <Logo src="/img/logo.png" alt="" />

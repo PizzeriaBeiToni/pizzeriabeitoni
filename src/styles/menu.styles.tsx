@@ -1,9 +1,8 @@
 import {styled} from "@mui/material";
-import {motion} from "framer-motion";
 import {ButtonLink, PrimaryHeadline} from "@/src/styles/presets.styles";
 
 
-export const Context = styled(motion.div)`
+export const Context = styled('div')`
   width: 100%;
   display: flex;
   flex-direction: column;

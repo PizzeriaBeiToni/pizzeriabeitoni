@@ -1,5 +1,4 @@
 import {styled} from "@mui/material";
-import {motion} from "framer-motion";
 
 
 export const AddressSection = styled('div')`
@@ -32,7 +31,7 @@ export const LinksSection = styled('div')`
 
 /////////////////////////////////////////////////////////////////////////////
 
-export const Context = styled(motion.div)`
+export const Context = styled('div')`
   width: 300px;
   max-width: 20vw;
   height: 100vh;
@@ -45,6 +44,9 @@ export const Context = styled(motion.div)`
   background: ${props => props.theme.palette.background.paper};
   color: ${props => props.theme.palette.primary.main};
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.14);
+  translate: -300px 0;
+  transform: translateX(300px);
+  transition: 0.3s;
 `;
 
 export const Logo = styled('img')`

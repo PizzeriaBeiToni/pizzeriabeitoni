@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import {Context, Logo, MenuButton, MenuContent} from "./Navbar.styles";
 import {GiKnifeFork as MenuIcon} from "react-icons/gi";
 import {NavAddressSection, NavLinksSection} from "@/src/components/Sidebar/Sidebar";
-import {contextMotion, menuButtonMotion, menuContentMotion} from "./Navbar.motion";
 
 
 const Navbar: React.FC = () => {
@@ -13,15 +12,15 @@ const Navbar: React.FC = () => {
     }
 
     return (
-        <Context {...contextMotion}>
+        <Context>
 
             <Logo src="/img/logo.png" alt=""/>
 
-            <MenuButton onClick={toggleMenu} {...menuButtonMotion(isMenuOpen)}>
+            <MenuButton open={isMenuOpen} onClick={toggleMenu}>
                 <MenuIcon />
             </MenuButton>
 
-            <MenuContent {...menuContentMotion(isMenuOpen)}>
+            <MenuContent open={isMenuOpen}>
 
                 {/* Address */}
                 <NavAddressSection />

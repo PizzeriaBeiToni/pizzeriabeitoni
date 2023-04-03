@@ -14,5 +14,15 @@ export const theme = createTheme({
     },
     typography: {
         fontFamily: `"Cormorant Garamond", serif`
+    },
+    components: {
+        MuiCssBaseline: {
+            styleOverrides: theme => ({
+                "::selection": {
+                    color: theme.palette.background.default,
+                    background: theme.palette.primary.main
+                }
+            })
+        }
     }
 });

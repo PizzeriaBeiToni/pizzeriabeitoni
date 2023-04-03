@@ -1,5 +1,4 @@
 import {styled} from "@mui/material";
-import {motion} from "framer-motion";
 
 
 export const Context = styled('div')`
@@ -7,11 +6,11 @@ export const Context = styled('div')`
   height: fit-content;
 `;
 
-export const GridWrapper = styled(motion.div)`
+export const GridWrapper = styled('div')`
 
 `;
 
-export const Image = styled(motion.img)`
+export const Image = styled('img')`
   width: 100%;
   object-fit: cover;
   pointer-events: none;
