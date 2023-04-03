@@ -1,28 +1,21 @@
 import React, {ReactNode} from "react";
-import {Link} from "react-scroll";
 import {Context} from "./NavLink.styles";
+import Link from "next/link";
 
 
 interface NavLinkProps {
-    targetId: string;
+    href: string;
     onClick?: () => void;
     children?: ReactNode;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ targetId, onClick, children }) => {
+const NavLink: React.FC<NavLinkProps> = ({ href, onClick, children }) => {
     return (
-        <Context>
-            <Link
-                containerId="content"
-                onClick={onClick}
-                duration={1000}
-                to={targetId}
-                smooth
-                spy
-            >
+        <Link href={href} onClick={onClick}>
+            <Context>
                 { children }
-            </Link>
-        </Context>
+            </Context>
+        </Link>
     );
 }
 

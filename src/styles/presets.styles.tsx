@@ -1,6 +1,20 @@
 import {styled} from "@mui/material";
 
 
+export const PrimaryHeadline = styled('h1')`
+  color: ${props => props.theme.palette.primary.main};
+  font-style: italic;
+  font-size: 3rem;
+`;
+
+export const LandingImage = styled('img')`
+  width: 100%;
+  height: calc(100vh - 20px);
+  margin-bottom: 70px;
+  object-fit: cover;
+  position: relative;
+`;
+
 export const ButtonLink = styled('a')`
   width: fit-content;
   height: fit-content;

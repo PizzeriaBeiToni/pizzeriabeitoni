@@ -14,8 +14,7 @@ export const Content = styled('div')`
   height: unset;
   padding: 10px 10px 10px 30px;
   overflow: scroll;
-  @media (max-width: ${props => props.theme.breakpoints.values.sm}px) {
-    margin-top: 75px;
-    padding: 5px;
+  @media (max-width: 1150px) {
+    padding: 120px 15px 0 15px;
   }
 `;

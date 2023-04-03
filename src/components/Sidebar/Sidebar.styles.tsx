@@ -36,7 +36,7 @@ export const Context = styled(motion.div)`
   width: 300px;
   max-width: 20vw;
   height: 100vh;
-  padding: 50px;
+  padding: 50px 10px 50px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +44,7 @@ export const Context = styled(motion.div)`
   overflow-x: hidden;
   background: ${props => props.theme.palette.background.paper};
   color: ${props => props.theme.palette.primary.main};
-  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.23);
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.14);
 `;
 
 export const Logo = styled('img')`

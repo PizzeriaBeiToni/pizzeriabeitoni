@@ -8,9 +8,8 @@ import {
     Logo
 } from "./Sidebar.styles";
 import {contextMotion} from "./Sidebar.motion";
-import {IconButton, useMediaQuery} from "@mui/material";
+import {IconButton} from "@mui/material";
 import NavLink from "@/src/components/NavLink/NavLink";
-import Navbar from "@/src/components/Navbar/Navbar";
 
 
 const Facebook: React.FC = () => (
@@ -30,20 +29,17 @@ const Facebook: React.FC = () => (
 
 export const NavLinksSection: React.FC<{ onLinkClick?: () => void }> = ({ onLinkClick }) => (
     <LinksSection>
-        <NavLink targetId="photos" onClick={onLinkClick}>
-            Fotos
+        <NavLink href="/" onClick={onLinkClick}>
+            Homepage
         </NavLink>
-        <NavLink targetId="menu" onClick={onLinkClick}>
+        <NavLink href="/menu" onClick={onLinkClick}>
             Menü
         </NavLink>
-        <NavLink targetId="maps" onClick={onLinkClick}>
-            Standort
+        <NavLink href="/zeiten" onClick={onLinkClick}>
+            Zeiten & Standort
         </NavLink>
-        <NavLink targetId="hours" onClick={onLinkClick}>
-            Öffnungszeiten
-        </NavLink>
-        <NavLink targetId="contact" onClick={onLinkClick}>
-            Kontakt
+        <NavLink href="/impressum" onClick={onLinkClick}>
+            Impressum
         </NavLink>
         <Facebook />
     </LinksSection>
@@ -61,12 +57,6 @@ export const NavAddressSection: React.FC = () => (
 
 
 const Sidebar: React.FC = () => {
-    const isSmallScreen = useMediaQuery('(max-width: 1150px)');
-
-    if (isSmallScreen) {
-        return <Navbar />;
-    }
-
     return (
         <Context {...contextMotion}>
 
