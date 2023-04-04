@@ -13,11 +13,14 @@
     />
 </h1>
 
+<h3 align="center">
+  (pizzeria-bei-toni.com)
+</h3>
+
 <p align="center">
     Thi is the restaurant's official website. It is built with the
     <a href="https://nextjs.org" target="_blank" rel="noreferrer">Next JS</a>
-    Framework and is deployed on
-    <a href="https://vercel.com" target="_blank" rel="noreferrer">Vercel</a>.
+    Framework and is deployed using an FTP solution.
 </p>
 
 
@@ -27,7 +30,6 @@ This project was built with the following technologies:
 - [React](https://reactjs.org)
 - [Next JS](https://nextjs.org)
 - [Material UI](https://mui.com)
-- [Framer Motion](https://www.framer.com/motion/)
 
 
 # Project Structure
@@ -65,3 +67,18 @@ yarn dev
 ```shell
 yarn build && yarn start
 ```
+
+# Deployment
+
+This website is deployed using an FTP solution. To deploy, follow these
+steps:
+
+1. Update credentials in `.env` to connect to the FTP server.
+
+2. Execute the following command:
+
+```shell
+yarn deploy
+```
+
+If the credentials were correct, the website should be deployed successfully.
