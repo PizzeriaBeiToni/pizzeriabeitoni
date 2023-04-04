@@ -5,27 +5,27 @@ import React from "react";
 import Head from "next/head";
 
 
-const Menu: NextPage = () => {
+const Speisekarte: NextPage = () => {
     return (
         <Context>
 
             <Head>
-                <title>Pizzeria Bei Toni | Menü</title>
+                <title>Pizzeria Bei Toni | Speisekarte</title>
             </Head>
 
             <MenuImage src="/img/menu/pizza.webp" alt="Pizza" />
 
             <MenuHeader>
-                Das Menü
+                Die Speisekarte
             </MenuHeader>
 
             <MenuDescription>
                 Wir sind ein klassisches, Italienisches Restaurant im Herzen Wenholthausens.
                 Unsere leckeren Gerichte repräsentieren die mediterranische, Italienische Kultur: Einfach,
-                rafiniert und geschmacksvoll.
+                raffiniert und geschmacksvoll.
             </MenuDescription>
 
-            <MenuLink href="/docs/menu.pdf" target="_blank" rel="noreferrer">
+            <MenuLink href="/docs/speisekarte.pdf" target="_blank" rel="noreferrer">
                 Öffnen <OpenIcon />
             </MenuLink>
 
@@ -35,4 +35,4 @@ const Menu: NextPage = () => {
 
 
 // noinspection JSUnusedGlobalSymbols
-export default Menu;
+export default Speisekarte;
