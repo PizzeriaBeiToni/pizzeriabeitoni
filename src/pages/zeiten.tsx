@@ -13,9 +13,7 @@ const Zeiten: NextPage = () => {
                 <title>Pizzeria Bei Toni | Zeiten</title>
             </Head>
 
-            <LandingImage
-                src="https://scontent-fra3-1.xx.fbcdn.net/v/t31.18172-8/1115940_1405112989713343_1405720748_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=2jIBg9Jynv4AX_Rvc1m&_nc_ht=scontent-fra3-1.xx&oh=00_AfCTUUGGttgk6rWFa6eoMVhzJs9LFdYOAHnA-3uFK5QRow&oe=64527400"
-            />
+            <LandingImage src="/img/zeiten/biergarten.webp" alt="Biergarten" />
 
             <HoursTable />
 

@@ -13,9 +13,7 @@ const Menu: NextPage = () => {
                 <title>Pizzeria Bei Toni | Menü</title>
             </Head>
 
-            <MenuImage
-                src="https://img.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg?w=2000" alt=""
-            />
+            <MenuImage src="/img/menu/pizza.webp" alt="Pizza" />
 
             <MenuHeader>
                 Das Menü
@@ -27,7 +25,7 @@ const Menu: NextPage = () => {
                 rafiniert und geschmacksvoll.
             </MenuDescription>
 
-            <MenuLink href="/menu.pdf" target="_blank" rel="noreferrer">
+            <MenuLink href="/docs/menu.pdf" target="_blank" rel="noreferrer">
                 Öffnen <OpenIcon />
             </MenuLink>
 
