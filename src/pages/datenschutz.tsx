@@ -6,7 +6,7 @@ import Head from "next/head";
 
 const Datenschutz: NextPage = () => {
     return (
-        <Container maxWidth="lg">
+        <Container maxWidth="md">
 
             <Head>
                 <title>Pizzeria Bei Toni | Datenschutz</title>
