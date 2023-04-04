@@ -35,7 +35,10 @@ export const NavLinksSection: React.FC<{ onLinkClick?: () => void }> = ({ onLink
             Menü
         </NavLink>
         <NavLink href="/zeiten" onClick={onLinkClick}>
-            Zeiten & Standort
+            Öffnungszeiten
+        </NavLink>
+        <NavLink href="/datenschutz">
+            Datenschutz
         </NavLink>
         <NavLink href="/impressum" onClick={onLinkClick}>
             Impressum

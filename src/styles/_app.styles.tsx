@@ -15,6 +15,6 @@ export const Content = styled('div')`
   padding: 10px 10px 10px 30px;
   overflow: scroll;
   @media (max-width: 1150px) {
-    padding: 120px 15px 0 15px;
+    padding: 120px 15px 30px 15px;
   }
 `;

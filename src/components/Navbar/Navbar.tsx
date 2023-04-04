@@ -7,6 +7,10 @@ import {NavAddressSection, NavLinksSection} from "@/src/components/Sidebar/Sideb
 const Navbar: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
+    function closeMenu() {
+        setIsMenuOpen(false);
+    }
+
     function toggleMenu() {
         setIsMenuOpen(!isMenuOpen);
     }
@@ -26,7 +30,7 @@ const Navbar: React.FC = () => {
                 <NavAddressSection />
 
                 {/* Links */}
-                <NavLinksSection onLinkClick={toggleMenu} />
+                <NavLinksSection onLinkClick={closeMenu} />
 
             </MenuContent>
 

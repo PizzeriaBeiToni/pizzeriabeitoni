@@ -29,7 +29,7 @@ export const MenuButton = styled('div')<{ open: boolean }>`
   margin: 20px;
   font-size: 25px;
   z-index: 200;
-  transform: rotate(${props => props.open? '0deg' : '-180deg'});
+  transform: rotate(${props => !props.open? '0deg' : '-180deg'});
   transition: 0.6s;
 `;
 
@@ -42,6 +42,6 @@ export const MenuContent = styled('div')<{ open: boolean }>`
   z-index: 100;
   background: ${props => props.theme.palette.background.paper};
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.14);
-  transform: translateY(${props => props.open? '-100vh' : '0'});
+  transform: translateY(${props => !props.open? '-100vh' : '0'});
   transition: 0.6s;
 `;
