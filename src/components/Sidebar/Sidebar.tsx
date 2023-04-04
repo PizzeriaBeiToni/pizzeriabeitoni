@@ -60,7 +60,7 @@ const Sidebar: React.FC = () => {
         <Context>
 
             {/* Logo */}
-            <Logo src="/img/logo.png" alt="" />
+            <Logo src="/logo/logo.png" alt="Pizzeria Bei Toni" />
 
             {/* Address */}
             <NavAddressSection />

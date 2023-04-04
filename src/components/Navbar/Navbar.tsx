@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
     return (
         <Context>
 
-            <Logo src="/img/logo.png" alt=""/>
+            <Logo src="/logo/logo.png" alt="Pizzeria Bei Toni"/>
 
             <MenuButton open={isMenuOpen} onClick={toggleMenu}>
                 <MenuIcon />

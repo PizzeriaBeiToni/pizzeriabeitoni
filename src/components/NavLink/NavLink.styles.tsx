@@ -4,7 +4,7 @@ import {styled} from "@mui/material";
 export const Context = styled('div')`
   font-size: 1.1rem;
   line-height: 1.9rem;
-  font-weight: 900;
+  font-weight: bolder;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;

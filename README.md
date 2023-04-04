@@ -1,6 +1,6 @@
 <h1 align="center">
     <img
-        src="public/img/logo.png"
+        src="public/logo/logo.png"
         alt="Pizzeria Bei Toni"
         style=
         "
