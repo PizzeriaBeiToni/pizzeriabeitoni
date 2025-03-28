@@ -40,7 +40,7 @@ const Impressum: NextPage = () => {
 
                         <TableRow>
                             <TableCell>Inhaber</TableCell>
-                            <TableCell>Antonio Vitale</TableCell>
+                            <TableCell>Pietro Vitale</TableCell>
                         </TableRow>
 
                         <TableRow>
@@ -65,7 +65,7 @@ const Impressum: NextPage = () => {
 
                         <TableRow>
                             <TableCell>Steuer-Nr.</TableCell>
-                            <TableCell>334/5102/0283</TableCell>
+                            <TableCell>334/5102/2890</TableCell>
                         </TableRow>
 
                     </TableBody>
